@@ -13,8 +13,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${GeistSans.variable}`}>
+          <div className="w-full">First Layout</div>
+          <p className="text-red-700">Second First Layout</p>
+        {children}
+      </body>
     </html>
   );
 }
