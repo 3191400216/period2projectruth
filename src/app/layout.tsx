@@ -15,8 +15,40 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistSans.variable}`}>
-          <div className="w-full">First Layout</div>
-          <p className="text-red-700">Second First Layout</p>
+          <div className="w-full bg-primary bg-blue-700 text-base-100 gap-4 text-center">First Layout</div>
+          <p className="bg-red-100 text-red-600 gap-4 text-center" >Second First Layout</p>
+          <button className="btn btn-primary gap-5">Button</button>
+          <div className="card bg-purple-50 w-96 shadow-xl gap-8">
+            <figure>
+              <img 
+               src="https://utfs.io/f/3538f835-0ea1-4f92-8f97-3db33294f447-1ody.jpg"
+               alt="Shoes" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">
+                Dinosaurs?
+                <div className="badge badge-secondary">NEW</div>
+              </h2>
+              <p>If a dinosaur chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Adopt Now!</button>
+              </div>
+            </div>
+          </div>
+          <div className="carousel carousel-vertical rounded-box h-96">
+            <div className="carousel-item h-full">
+              <img src="https://utfs.io/f/35522c16-42ed-438e-9dd1-f081243e5bde-1ody.jpg" />
+            </div>
+            <div className="carousel-item h-full">
+              <img src="https://utfs.io/f/9b247e72-b2ac-4f93-8800-13e75784e016-1ody.jpg" />
+            </div>
+            <div className="carousel-item h-full">
+              <img src="https://utfs.io/f/c4ea90f6-64f5-4e85-9090-14668544b849-2a.jpg" />
+            </div>
+            <div className="carousel-item h-full">
+              <img src="https://utfs.io/f/307e3d9b-43d8-4741-991a-2a86923fc9a7-ojzwv9.jpg" />
+            </div>
+            </div>
         {children}
       </body>
     </html>
