@@ -14,6 +14,8 @@ const mockImages = mockUrls.map((url, index) => ({
   id: index + 1,
   url,
 }));
+
+<div>{image.createdAt.toString()}</div>
 */
 
 export default async function HomePage() {
@@ -26,7 +28,7 @@ export default async function HomePage() {
           <div key={image.id} className="w-48">
               <img src={image.url} />
               <div>{image.name}</div>
-              <div>{image.createdAt.toString()}</div>
+              
         </div>
         ))}
         </div>
