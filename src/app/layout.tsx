@@ -24,6 +24,7 @@ export default function RootLayout({
                src="https://utfs.io/f/3538f835-0ea1-4f92-8f97-3db33294f447-1ody.jpg"
                alt="Shoes" />
             </figure>
+
             <div className="card-body">
               <h2 className="card-title">
                 Dinosaurs?
@@ -35,8 +36,9 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="card bg-pink-50 w-96 shadow-xl gap-8">
-            <figure>
+
+        
+          <figure>
               <img 
                src="https://utfs.io/f/307e3d9b-43d8-4741-991a-2a86923fc9a7-ojzwv9.jpg"
                alt="Shoes" />
@@ -51,7 +53,6 @@ export default function RootLayout({
                 <button className="btn btn-primary">Climb Now!</button>
               </div>
             </div>
-          </div>
           
           <div className="carousel carousel-vertical rounded-box h-96">
             <div className="carousel-item h-full">
