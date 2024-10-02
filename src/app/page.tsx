@@ -22,7 +22,7 @@ export default async function HomePage() {
   const images = await db.query.images.findMany();
   return (
       <main className="">
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 items-center ">
         
         {[...images].map((image) => (
           <div key={image.id} className="w-48">

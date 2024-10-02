@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistSans.variable}`}>
-          <div className="w-full bg-primary bg-blue-700 text-base-100 gap-4 text-center">First Layout</div>
-          <p className="bg-red-100 text-red-600 gap-4 text-center" >Second First Layout</p>
-          <button className="btn btn-primary gap-5">Button</button>
+          <div className="w-full bg-primary bg-blue-700 text-base-100 gap-4 text-center text-2xl">First Layout</div>
+          <p className="bg-red-100 text-red-600 gap-4 text-center text-lg" >Second First Layout</p>
+          <div className=""></div>
           <div className="card bg-purple-50 w-96 shadow-xl gap-8">
             <figure>
               <img 
@@ -36,24 +36,8 @@ export default function RootLayout({
               </div>
             </div>
           </div>
+      
 
-        
-          <figure>
-              <img 
-               src="https://utfs.io/f/307e3d9b-43d8-4741-991a-2a86923fc9a7-ojzwv9.jpg"
-               alt="Shoes" />
-            </figure>
-          <div className="card-body">
-              <h2 className="card-title">
-                Mountains?
-                <div className="badge badge-secondary">New</div>
-              </h2>
-              <p>Ain't no mountain high eno-o-ugh!</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Climb Now!</button>
-              </div>
-            </div>
-          
           <div className="carousel carousel-vertical rounded-box h-96">
             <div className="carousel-item h-full">
               <img src="https://utfs.io/f/35522c16-42ed-438e-9dd1-f081243e5bde-1ody.jpg" />
