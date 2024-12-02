@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { db } from "~/server/db"
+import { db } from "~/server/db";
 import { getMyImages } from "~/server/queries";
 
 /*const mockUrls = [
@@ -27,7 +27,7 @@ export default async function HomePage() {
   return (
       <main className="">
         <div className="flex flex-wrap gap-4 items-center ">
-        {images != null && images.map((image, index) => (
+        {images?.map((image, index) => (
           <div key={image.id} className="w-48">
               <img src={image.url} />
               <div>{image.name}</div>
@@ -37,4 +37,4 @@ export default async function HomePage() {
         </div>
       </main>
   );
-}
+};
