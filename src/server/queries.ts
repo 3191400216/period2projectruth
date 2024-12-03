@@ -16,8 +16,7 @@ export async function getMyImages(): Promise<Image[] | null>{
 
     if (!user.userId) {
         return null;
-
-        throw new Error("unauthorized");
+ 
     };
 
     const images = await db.query.images.findMany({
