@@ -15,7 +15,8 @@ export async function getMyImages(): Promise<Image[] | null>{
     const user = await auth();
 
     if (!user.userId) {
-        return null;
+        //return null;
+        throw new Error();
  
     };
 
