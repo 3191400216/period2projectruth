@@ -16,7 +16,7 @@ export async function getMyImages(): Promise<Image[] | null>{
 
     if (!user.userId) {
         //return null;
-        throw new Error();
+        throw new Error("unauthorized");
  
     };
 
